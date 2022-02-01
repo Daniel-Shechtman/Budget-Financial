@@ -264,6 +264,17 @@ main .post p{
     }
 }
 
+@media(max-width: 500px){
+    .navbar {
+        padding: 10px 2px;
+    }
+
+    .navbar a{
+        padding: 10px 5px !important;
+        margin: 0 3px;
+    }
+}
+
 
 
 
