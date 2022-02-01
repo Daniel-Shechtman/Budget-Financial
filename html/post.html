@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The world's leading financial company located in New York, any of your dream we can fulfill.">
+    <meta name="keywords"
+        content="company,new york,financial,financial company company new york">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <script src="https://kit.fontawesome.com/5b5841c615.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Read Our Blog</title>
+</head>
+
+<body id="home">
+    <header class="hero post">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"><i class="fas fa-funnel-dollar"></i>
+                    Budget</span> Financial
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="post bg-light">
+            <h2>Blog Post One</h2>
+            <p class="meta bg">
+                <i class="fas fa-user"></i> Poster by <strong>Daniels
+                    Shechtman</strong> | January-25-2022
+            </p>
+            <img src="../image_resources/blog/blog1.jpg" alt="blog post">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Praesentium obcaecati eligendi quisquam rem inventore saepe
+                necessitatibus, sint consectetur in minus.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi debitis fugiat cum corrupti. Tenetur libero, maiores
+                laboriosam voluptas quos doloribus minima id soluta provident ex
+                asperiores, eius facere? Quod ipsum similique fugit natus
+                delectus
+                consectetur sint perferendis totam perspiciatis, sapiente, eum
+                aut
+                veniam voluptate soluta. Dignissimos facere laudantium
+                reiciendis
+                beatae?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+                numquam ea temporibus nisi magnam ipsam molestias veniam natus.
+                Incidunt, eligendi vero dolorem facilis ipsum tempora harum
+                consequatur, sequi porro, atque minima cumque dolore quaerat quo
+                eum totam. Quod, quo nemo officiis incidunt quis aliquid et
+                perferendis blanditiis laudantium consectetur repellat!</p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2022 - Budget Financial </p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = True;
+                }, 200);
+            } else {
+                navbar.classList.add('top')
+                scrolled = false;
+            }
+        }
+    </script>
+</body>
+
+</html>
